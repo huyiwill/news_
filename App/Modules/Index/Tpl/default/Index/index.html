@@ -12,14 +12,14 @@
 <script src="../Public/Js/jquery.js"></script>
 <script src="../Public/Js/bootstrap.min.js"></script>
 </head><body id="body">
-<header> 
+<header>
   <!-- 导航开始 -->
  	<include file="Public:header" />
-  <!-- 导航结束 --> 
+  <!-- 导航结束 -->
 </header>
 <div class="container">
   <div class="col-lg-8 col-md-8 content">
-    <div id="carousel-example-generic" class="carousel slide mb20" data-ride="carousel"> 
+    <div id="carousel-example-generic" class="carousel slide mb20" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -40,7 +40,7 @@
         </div>
         </volist>
       </div>
-      <!-- Controls --> 
+      <!-- Controls -->
       <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev" > <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#carousel-example-generic" data-slide="next" > <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
    <div class="media mb20"> <a class="pull-left" href="l"> <img class="media-object" alt="<{:R('Siteinfo/info',array('title'),'Widget')}>" src="../Public/Images/logo1.png"> </a>
       <div class="media-body">
@@ -48,7 +48,7 @@
         <{:R('Siteinfo/info',array('description'),'Widget')}> </div>
     </div>
     <div itemscope itemtype="">
-      
+
 <volist name="modelid1" id="modelid1" offset='0' length='3'>
       <div class="col-lg-4 col-md-6 col-sm-6 mb20">
         <div class="thumbnail">
@@ -57,7 +57,7 @@
             <div class="stickyContent">
               <h3 class="stickyTitle"><a href="<{:U('Index/Article/index/',array('articleid'=>$modelid1['article_id']))}>" title="<{$modelid1.title}>"><span itemprop="itemListElement"><{$modelid1.title}></span></a></h3>
               <div class="stickyDesc" itemprop="description">
-                <p><{$modelid1.summary}></p> 
+                <p><{$modelid1.summary}></p>
               <!--   <p><{$modelid1.content|imgs=$modelid1.content}></p> -->
               </div>
             </div>
@@ -80,16 +80,16 @@
           <a itemprop="url" href="<{:U('Index/Article/index/',array('articleid'=>$Articles['article_id']))}>"class="list-group-item">
           <span itemprop="itemListElement"><{$Articles.title}></span>
           </a>
-         </if> 
+         </if>
        </Volist>
-     
+
       </ul>
       </div>
     </div>
 </Volist>
-    
-   
- 
+
+
+
 
 
   </div>
@@ -103,10 +103,10 @@
       		<{:R('Siteinfo/info',array('announcement'),'Widget')}>
       </div>
     </aside>
-   
+
 
     <div class="panel-group mb20" id="accordion">
-     
+
 
       <div class="panel panel-danger">
         <div class="panel-heading">
@@ -117,7 +117,7 @@
             </a>
           </h3>
         </div>
-       
+
         <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
       <foreach name="approval" item="approval">
 
@@ -130,7 +130,7 @@
       </foreach>
         </div>
       </div>
-    
+
 
       <div class="panel panel-success">
         <div class="panel-heading">
@@ -149,7 +149,7 @@
        </foreach>
          </div>
       </div>
-    
+
 
       <div class="panel panel-info">
         <div class="panel-heading">
@@ -169,7 +169,7 @@
         </div>
       </div>
     </div>
-    
+
 
 
     <aside class="panel panel-default">
@@ -192,8 +192,8 @@
         </div>
       </aside>
     </div>
-    <!-- 右侧底部广告 --> 
-    <script>var ad=$('#ad'),st;var sd=$('.sidebar'),st;ad.attr('data-offset-top',ad.offset().top+ad.innerWidth());var wd=sd.innerWidth()-30;ad.attr({style:'width:'+wd+'px'});</script> 
+    <!-- 右侧底部广告 -->
+    <script>var ad=$('#ad'),st;var sd=$('.sidebar'),st;ad.attr('data-offset-top',ad.offset().top+ad.innerWidth());var wd=sd.innerWidth()-30;ad.attr({style:'width:'+wd+'px'});</script>
   </div>
   <div class="clean"></div>
   </div>
@@ -221,7 +221,7 @@
   <button type="button" class="btn btn-default" id="refresh" title="刷新"><span class="glyphicon glyphicon-repeat"></span></button>
   <button type="button" class="btn btn-default" id="goBottom" title="去底部"><span class="glyphicon glyphicon-arrow-down"></span></button>
 </div>
-<!-- 去顶部 --> 
+<!-- 去顶部 -->
 <script type="text/javascript">
 jQuery(document).ready(function($){
   $('#goTop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});

@@ -33,7 +33,7 @@ class IndexAction extends CommonAction
 		$this->assign('portrait',$portraits);
 		//显示首页右侧用户注册头像
 		$this->assign('approval2',$approval2);
-		//显示模板	
+		//显示模板
 		$this->display('index');
 	}
 }
