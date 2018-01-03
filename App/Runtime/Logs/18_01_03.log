@@ -1259,3 +1259,1280 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.001500s ]
 INFO: [ view_end ] --END-- [ RunTime:0.002500s ]
 
+[ 2018-01-03T16:16:07+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+SQL: SHOW COLUMNS FROM `easy_link` [ RunTime:0.004500s ]
+SQL: SHOW COLUMNS FROM `easy_member_user` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `easy_article` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_article` WHERE ( isslides=1 and islock=0 ) ORDER BY rand()  [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( ispush=1 and isverify=1 ) LIMIT 4   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `easy_article` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_article` WHERE ( 1=1 AND tid='62' )  [ RunTime:0.000500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_article` WHERE ( 1=1 AND tid='63' )  [ RunTime:0.000500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_article` WHERE ( 1=1 AND tid='64' )  [ RunTime:0.000500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_article` WHERE ( 1=1 AND tid='65' )  [ RunTime:0.000500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_article` WHERE ( ispush=1 and islock=0 ) ORDER BY article_id desc LIMIT 5   [ RunTime:0.000500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_article` WHERE ( ispush=1 and islock=0 ) ORDER BY rand() LIMIT 5   [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_article` WHERE ( ispush=1 and islock=0 ) ORDER BY article_id desc LIMIT 5   [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_link` WHERE ( isverify=1 )  [ RunTime:0.000500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_member_user` WHERE ( islock=0 ) ORDER BY user_id desc LIMIT 24   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 168 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 197 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 137 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001500s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001500s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000500s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006500s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001500s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2018-01-03T16:38:28+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:38:36+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:44:40+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:44:53+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.007500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:45:00+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T16:47:37+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T16:47:43+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:47:51+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.001000s ]
+
+[ 2018-01-03T16:48:07+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:48:43+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.017000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.001500s ]
+
+[ 2018-01-03T16:48:52+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.014000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:48:57+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.016000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.001000s ]
+
+[ 2018-01-03T16:48:58+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.017500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:55:21+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:56:21+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:57:40+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:58:08+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T16:58:44+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T16:58:54+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T16:59:55+08:00 ] 127.0.0.1 /jrnc/201801/t20180103_1133054.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] strpos(): Empty needle F:\A_my_project\news_cms\App\Modules\Index\Action\EmptyAction.class.php 第 16 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_router` [ RunTime:0.004000s ]
+ERR: 1146:Table 'easycms.easy_router' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `easy_router`
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT `url` FROM `easy_router` WHERE ( `rewrite` = 'jrnc' ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1146:Table 'easycms.easy_router' doesn't exist
+ [ SQL语句 ] : SELECT `url` FROM `easy_router` WHERE ( `rewrite` = 'jrnc' ) LIMIT 1  
+
+[ 2018-01-03T16:59:56+08:00 ] 127.0.0.1 /index.php?s=/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:04:58+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:18:14+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:18:15+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.007500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.001000s ]
+
+[ 2018-01-03T17:18:25+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:19:09+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.008500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:19:15+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T17:19:17+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.008500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.001000s ]
+
+[ 2018-01-03T17:19:20+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:20:20+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:21:55+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:22:35+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:22:41+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.001000s ]
+
+[ 2018-01-03T17:23:31+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:23:51+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.001000s ]
+
+[ 2018-01-03T17:24:17+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:26:07+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:26:15+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T17:29:12+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.011500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.001000s ]
+
+[ 2018-01-03T17:37:19+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:42:50+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:42:55+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T17:45:45+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:47:26+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:49:52+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.010500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T17:50:15+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T17:52:37+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:53:16+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:53:30+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+NOTIC: [2] strip_tags() expects parameter 1 to be string, array given F:\A_my_project\news_cms\App\Modules\Index\Action\IndexAction.class.php 第 27 行.
+
+[ 2018-01-03T17:54:31+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:54:52+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.001000s ]
+
+[ 2018-01-03T17:58:48+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.023500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.003000s ]
+
+[ 2018-01-03T17:58:59+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:59:15+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.007500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.001000s ]
+
+[ 2018-01-03T17:59:32+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:59:38+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:59:46+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T17:59:55+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T18:01:31+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:01:35+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T18:01:45+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:02:01+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:02:31+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:02:57+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:03:05+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:03:34+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.008500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:03:49+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:03:58+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:04:14+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:04:45+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.007500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:04:55+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:05:28+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+NOTIC: [2] preg_match_all() expects parameter 2 to be string, array given F:\A_my_project\news_cms\App\Modules\Index\Action\IndexAction.class.php 第 32 行.
+
+[ 2018-01-03T18:05:50+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:06:01+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T18:06:09+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.007500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:06:30+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.006000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000000s ]
+
+[ 2018-01-03T18:06:54+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:09:08+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:09:27+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.005500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+
+[ 2018-01-03T18:11:15+08:00 ] 127.0.0.1 /index.php?s=/index/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\A_my_project\news_cms\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `easy_category` [ RunTime:0.004500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead F:\A_my_project\news_cms\ThinkPHP\Lib\Core\Db.class.php 第 604 行.
+SQL: SELECT * FROM `easy_category` WHERE ( isverify=1 and isshow=1 ) ORDER BY sort desc  [ RunTime:0.000500s ]
+

@@ -23,7 +23,7 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <!--<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
         <![endif]-->
-        <title>Home</title>
+        <title>NEWS</title>
     </head>
     <body>
         <!-- Header -->

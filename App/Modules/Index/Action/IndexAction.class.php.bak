@@ -4,42 +4,8 @@
 * @author  <[c@easycms.cc]>
 */
 class IndexAction extends CommonAction
-{
-    public $img;
-    public $title;
-    public $desc;
-    //news index
-    public function index(){
-        $url = "http://www.ncnews.com.cn/xwzx/ncxw/"; //nanchang  news  station
-        $domain = "http://www.ncnews.com.cn";
-        $con = file_get_contents($url);
-        //p(htmlspecialchars($con));
-        //匹配头条
-        $pattern = '/<div class=\"topnewslist\".*?>.*?<\/div>/ismu';
-        //match banner  新闻
-        $pattern = '/<ul class=\"headnewslist\">(.*?)<\/ul>/ismu';
-        preg_match($pattern, $con, $arr);
-        //p($arr);
-        //match images
-        $pat1 = '/<a href=\"(.*?)\" target=\"_blank\" class=\"pic\">(.*?)<\/a>/iu';
-        preg_match_all($pat1, $arr[0], $images);
-        $img_href[] = $images[1];
-        //imgages  url  address
-        $imgs = array();
-        foreach($images[2] as $img_v){
-            $pat = '/<img .*? data-original=\"(.*?)\".*?>/iu';
-            $pat = '/\"http:\/\/(.*)[\.jpg|\.png]\"/is';
-            preg_match_all($pat, $img_v, $img);
-            p(parse_url($img[0][0]));
-            $imgs[] = $img[0][0];
-        }
-        p($imgs);
-        foreach($arr[1] as $id => $v){
-            echo "<a href=index2.php?url=$v>" . $arr[2][$id] . "</a>----来源：http://news.sina.com.cn/<br>";
-        }
-    }
-
-	Public function index2(){
+{ 
+	Public function index(){
 		$cats=D('Category');
 		$link=M('link');
 		$portrait=M('Member_user');
