@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html lang="zxx">
     <head>
         <meta charset="utf-8">
@@ -410,4 +410,3 @@
         <script src="__JS__/main.js"></script>
     </body>
 </html>
-

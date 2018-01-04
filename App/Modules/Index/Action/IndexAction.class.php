@@ -1,5 +1,8 @@
 <?php
+//
 use \phpspider\core\requests;
+use \phpspider\core\selector;
+
 /**
  * 前台首页
  * @author  <[c@easycms.cc]>
@@ -91,9 +94,30 @@ class IndexAction extends CommonAction{
 
     public function index_news_detail(){
         $news_content_url = $_GET['url'];
-        $news_detail = requests::get($news_content_url);
+        $news_detail      = requests::get($news_content_url);
+        $news_content     = selector::select($news_detail, "//div[contains(@class,'newsread')]");
+        //xpath
+        $one_news_title     = selector::select($news_detail, "//div[contains(@class,'read')]//h3"); //1
+        $one_news_top       = selector::select($news_detail, "//div[contains(@class,'newsinfo')]");
+        $one_news_top       = selector::remove($one_news_top, "//i[contains(@id,'fontsize')]");
+        $one_news_time      = trim($one_news_top);      //2
 
-        p($news_detail);
+        $one_news_imgs_tags = selector::select($news_content,"//div[contains(@align,'center')]");
+        $pattern = '/<img[^>]*.?>/i';
+        foreach($one_news_imgs_tags as $k=>$tag){
+            if(preg_match($pattern,$tag)){
+                $one_news_imgs_tags[$k] = selector::select($tag, "//img"); //3
+            }
+        }
+
+        $p = "/<img[^>]*src[=\"\'\s]+([^\"\']*)[\"\']?[^>]*>((?:(?!<img\b)[\s\S])*)/i";
+        $news_content= '<div align="left">34534<p>asdfa</p></div>';
+        $p = '/<div[^>]*?align=\"left\"*?>(.*?)(<p>(.*?)<\/p>){0,1}.?<\/div>/ism';
+        $content = array();
+        preg_match_all($p,$news_content,$content);
+        $one_news_content   = selector::select($news_content,"//div[contains(@align,'left')]");
+        p($content);
+        $this->display('news');
     }
 
     Public function index2(){
