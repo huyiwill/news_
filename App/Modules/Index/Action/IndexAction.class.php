@@ -94,31 +94,62 @@ class IndexAction extends CommonAction{
 
     public function index_news_detail(){
         $news_content_url = $_GET['url'];
+        $host = pathinfo($news_content_url);
+        $img_url_ = $host['dirname'];
+
         $news_detail      = requests::get($news_content_url);
         $news_content     = selector::select($news_detail, "//div[contains(@class,'newsread')]");
-        //xpath
-        $one_news_title     = selector::select($news_detail, "//div[contains(@class,'read')]//h3"); //1
-        $one_news_top       = selector::select($news_detail, "//div[contains(@class,'newsinfo')]");
-        $one_news_top       = selector::remove($one_news_top, "//i[contains(@id,'fontsize')]");
-        $one_news_time      = trim($one_news_top);      //2
+        p($news_content);
+        /****类别内容****/
+        //$news_top = requests::get($img_url_);
+        //$pos = strrpos($img_url_,'/');
+        //$domain_url_  =  substr($img_url_,0,$pos);
+        //$news_cate_content = requests::get($domain_url_);
+        /****类别内容****/
 
-        $one_news_imgs_tags = selector::select($news_content,"//div[contains(@align,'center')]");
-        $pattern = '/<img[^>]*.?>/i';
-        foreach($one_news_imgs_tags as $k=>$tag){
-            if(preg_match($pattern,$tag)){
-                $one_news_imgs_tags[$k] = selector::select($tag, "//img"); //3
+        //xpath
+        $one_news_title = selector::select($news_detail, "//div[contains(@class,'read')]//h3"); //1
+        $one_news_top   = selector::select($news_detail, "//div[contains(@class,'newsinfo')]");
+        $one_news_top   = selector::remove($one_news_top, "//i[contains(@id,'fontsize')]");
+        $one_news_time  = trim($one_news_top);      //2
+
+        $one_news_imgs_tags = selector::select($news_content, "//div[contains(@align,'center')]");
+        $pattern            = '/<img[^>]*.?>/i';
+        if(!empty($one_news_imgs_tags)){
+            foreach($one_news_imgs_tags as $k => $tag){
+                if(preg_match($pattern, $tag)){
+                    $one_news_imgs_tags[$k] = $img_url_.ltrim(selector::select($tag, "//img"),'.'); //3
+                }
             }
         }
 
         $p = "/<img[^>]*src[=\"\'\s]+([^\"\']*)[\"\']?[^>]*>((?:(?!<img\b)[\s\S])*)/i";
         //$news_content= '<div align="left">34534<p>sdfas</p></div>';
-        $p = '/<div[^>]*?align=\"left\"*?>(.*?)(<p>(.*?)<\/p>)*<\/div>/ism';
-        $p = '/<div[^>]*?align=\"left\"*?>(.*?)(<p[^>]*?>(.*?)<\/p>.*?)?<\/div>/ism';
+        $p                = '/<div[^>]*?align=\"left\"*?>(.*?)(<p>(.*?)<\/p>)*<\/div>/ism';
+        $p                = '/<div[^>]*?align=\"left\"*?>(.*?)(<p[^>]*?>(.*?)<\/p>.*?)?<\/div>/ism';
+        //$one_news_content = selector::select($news_content, "//div[contains(@align,'left')]");
+        $content          = selector::select($news_content, $p, 'regex');
+        $content_title    = isset($content[0]) ? trim($content[0]) : '';
+        $content_main     = isset($content[2]) ? trim($content[2]) : '';
 
-        //preg_match_all($p,$news_content,$content);
-        $one_news_content   = selector::select($news_content,"//div[contains(@align,'left')]");
-        $content = selector::select($news_content,$p,'regex');
-        p($content);
+        //获取banner
+        $banner = array();
+       foreach($one_news_imgs_tags as  $imgs_tag){
+            $one = substr($imgs_tag,0,1);
+            if($one == 'h'){
+                $banner[] = $imgs_tag;
+            }
+       }
+
+
+        $this -> assign('one_news_title',$one_news_title);
+        $this -> assign('one_news_time',$one_news_time);
+        $this -> assign('one_news_imgs_tags',$one_news_imgs_tags);
+        $this -> assign('content_title',$content_title);
+        $this -> assign('content_main',$content_main);
+        $this -> assign('banner',$banner[0]);
+        //p($one_news_imgs_tags);
+
         $this->display('news');
     }
 
