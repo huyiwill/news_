@@ -111,11 +111,13 @@ class IndexAction extends CommonAction{
         }
 
         $p = "/<img[^>]*src[=\"\'\s]+([^\"\']*)[\"\']?[^>]*>((?:(?!<img\b)[\s\S])*)/i";
-        $news_content= '<div align="left">34534<p>asdfa</p></div>';
-        $p = '/<div[^>]*?align=\"left\"*?>(.*?)(<p>(.*?)<\/p>){0,1}.?<\/div>/ism';
-        $content = array();
-        preg_match_all($p,$news_content,$content);
+        //$news_content= '<div align="left">34534<p>sdfas</p></div>';
+        $p = '/<div[^>]*?align=\"left\"*?>(.*?)(<p>(.*?)<\/p>)*<\/div>/ism';
+        $p = '/<div[^>]*?align=\"left\"*?>(.*?)(<p[^>]*?>(.*?)<\/p>.*?)?<\/div>/ism';
+
+        //preg_match_all($p,$news_content,$content);
         $one_news_content   = selector::select($news_content,"//div[contains(@align,'left')]");
+        $content = selector::select($news_content,$p,'regex');
         p($content);
         $this->display('news');
     }
