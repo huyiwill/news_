@@ -55,7 +55,7 @@ class IndexAction extends CommonAction{
             $data[$i]['title_href'] = $title_href[$i];
             $data[$i]['title']      = $title[$i];
             $data[$i]['desc']       = $desc[$i];
-            $data[$i]['twnc']       = "头条南昌";
+            $data[$i]['twnc']       = "图文南昌";
             $time                   = pathinfo($img_href[$i])['filename'];
             $time_arr               = explode('_', $time);
             $data[$i]['time']       = date("Y-m-d", strtotime(ltrim($time_arr[0], 't')));
@@ -70,7 +70,7 @@ class IndexAction extends CommonAction{
             'title_href' => $title_href[0],
             'title'      => $title[0],
             'desc'       => $desc[0],
-            'twnc'       => "头条南昌",
+            'twnc'       => "图文南昌",
             'time'       => date("Y-m-d", strtotime(ltrim($time_arr[0], 't')))
         );
         //p($data);
