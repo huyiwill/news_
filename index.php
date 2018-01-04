@@ -9,11 +9,14 @@ define('APP_PATH', './App/');
 define('HTML_PATH', './Html/');
 //3.开启调试模式
 define('APP_DEBUG', true);
+//debug function p()
 function p($a){
     echo "<pre>";
     print_r($a);
     die;
 }
+//contains  phpspider  files
+require './vendor/phpspider/autoloader.php';
 
 //3应用核心文件(区分大小写，windows不需要区分，但是linux需要)
 require './ThinkPHP/ThinkPHP.php';

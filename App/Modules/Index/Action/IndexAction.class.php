@@ -1,5 +1,5 @@
 <?php
-
+use \phpspider\core\requests;
 /**
  * 前台首页
  * @author  <[c@easycms.cc]>
@@ -37,9 +37,18 @@ class IndexAction extends CommonAction{
         $pat2 = '/<h3><a href=\"(.*?)\" target=\"_blank\">(.*?)<\/a><\/h3>/';
         preg_match_all($pat2, $arr[0], $titles);
         $title_href = array();
+
         foreach($titles[1] as $title_v){
-            $title_v      = ltrim($title_v, '.');
-            $title_href[] = $url . $title_v;      //3
+            $sub = substr($title_v, 0, 1);
+            if($sub == 'h'){
+                $title_href[] = $title_v;      //3
+            }elseif($sub == '.'){
+                $title_v      = ltrim($title_v, '.');
+                $title_href[] = $url . $title_v;      //3
+            }else{
+                $title_v      = ltrim($title_v, '.');
+                $title_href[] = $url . $title_v;      //3
+            }
         }
         $title = $titles[2];                   //4
 
@@ -81,7 +90,10 @@ class IndexAction extends CommonAction{
     }
 
     public function index_news_detail(){
-        p($_GET);
+        $news_content_url = $_GET['url'];
+        $news_detail = requests::get($news_content_url);
+
+        p($news_detail);
     }
 
     Public function index2(){
