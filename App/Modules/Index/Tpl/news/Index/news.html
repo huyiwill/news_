@@ -296,26 +296,32 @@
                         <div class="current">
                             <h1 class="text-center yel_line current__title"><{$one_news_title}></h1>
                             <if condition="$content_title neq null">
-                            <p class="current__text"><{$content_title}></p>
+                                <p class="current__text"><{$content_title}></p>
                             </if>
 
                           <if condition="$one_news_imgs_tags neq null">
-                            <foreach name="one_news_imgs_tags" item="tags">
+
 
                              <php>
-                               if(substr($tags,0,1) == 'h'){
 
-                              echo "<img src='{$tags}' alt=\"img\" class=\"current__img\">";
-                               }else{
-                               echo '<blockquote class="quote current__quote">'.$tags.'</blockquote>';
-                               }
+                              for($i=0;$i<count($one_news_imgs_tags);$i++){
+                                  echo "<img src='".$one_news_imgs_tags[$i]."' alt=\"img\" class=\"current__img\">";
+
+                                 if(isset($news_tag) && !empty($news_tag)){
+                                     echo '<blockquote class="quote current__quote">'.$news_tag[$i].'</blockquote>';
+                                 }
+                              }
+
                              </php>
 
-                            <!--<p class="current__text"><{$tags}></p>-->
 
-                            </foreach>>
                           </if>
-                            <p class="current__text"><{$content_main}></p>
+
+                            <if condition="$content_main neq null">
+                                <foreach name="content_main" item="new_main">
+                                  <p class="current__text"><{$new_main}></p>
+                                </foreach>
+                            </if>
 
                         </div>
                     </div>
