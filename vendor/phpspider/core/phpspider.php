@@ -1179,6 +1179,11 @@ class phpspider
 
         // 如果是内容页, 分析提取HTML页面中的字段
         // 列表页也可以提取数据的, source_type: urlcontext, 未实现
+        //if ($link['url_type'] == 'list_page')
+        //{
+        //    $this->get_html_fields($page['raw'], $url, $page);
+        //}
+
         if ($link['url_type'] == 'content_page') 
         {
             $this->get_html_fields($page['raw'], $url, $page);

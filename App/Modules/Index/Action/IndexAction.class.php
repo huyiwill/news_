@@ -44,8 +44,8 @@ class IndexAction extends CommonAction{
 
     //循环爬取
     public function index_spider(){
-        $spider_m = new SpiderModel();
-        $spider_m -> spider1();
+        //$spider_m = new SpiderModel();
+        //$spider_m -> spider1();
     }
 
 }
