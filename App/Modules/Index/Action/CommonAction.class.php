@@ -7,7 +7,8 @@ class CommonAction extends Action
 {
 	Public function _initialize(){
 		if (ismobile()) {
-            C('DEFAULT_THEME','mobile');
+            //C('DEFAULT_THEME','mobile');
+            C('DEFAULT_THEME','news');
         }
 		//全局首页，用户个人中心导航分类展示
 		$cats=M('Category')->where('isverify=1 and isshow=1')->order('sort desc')->select();

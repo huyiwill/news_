@@ -1179,10 +1179,6 @@ class phpspider
 
         // 如果是内容页, 分析提取HTML页面中的字段
         // 列表页也可以提取数据的, source_type: urlcontext, 未实现
-        //if ($link['url_type'] == 'list_page')
-        //{
-        //    $this->get_html_fields($page['raw'], $url, $page);
-        //}
 
         if ($link['url_type'] == 'content_page') 
         {
@@ -1759,8 +1755,11 @@ class phpspider
      * @author seatle <seatle@foxmail.com> 
      * @created time :2016-09-23 17:13
      */
-    public function get_fields($confs, $html, $url, $page) 
+    public function get_fields($confs, $html, $url, $page)
     {
+        //$titles = selector::select($html,"//div[contains(@id,'container')]//ul//li[contains(@class,'item')]//h3//a");
+        //print_r($titles);die;
+
         $fields = array();
         foreach ($confs as $conf) 
         {

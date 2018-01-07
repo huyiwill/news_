@@ -90,14 +90,18 @@ class IndexModel extends Model{
     public function bwzg_rd($url){
         $recommend_main = requests::get($url);
         $host = pathinfo($url);
-        $img_url_ = $host['dirname'].'/'.$host['filename'];
-
+        if(isset($host['extension'])){
+            $img_url_ = $host['dirname'];
+        }else{
+            $img_url_ = $host['dirname'].'/'.$host['filename'];
+        }
         $news_list = selector::select($recommend_main,"//ul[contains(@class,'listPicBox clearfix')]");
         $news_li = selector::select($news_list,"//li");
         $lis = array();
 
         foreach($news_li as $k => $li){
             $img = selector::select($li,"//img");
+
             if(count($lis) >= 3){
                 continue;
             }
@@ -112,7 +116,7 @@ class IndexModel extends Model{
                }else{
                    $lis[$k]['li_url'] = $img_url_.ltrim($li_url,'.');
                }
-
+                //$lis[$k]['li_imgs_url'] = "http://www.songtreehy.com/www/songtree/Uploads/mid/pig.jpg";
                if(substr($li_imgs_url,0,1) == 'h'){
                    $lis[$k]['li_imgs_url'] = trim($li_imgs_url);
                }else{
@@ -124,6 +128,7 @@ class IndexModel extends Model{
             }
 
         }
+
         $lis = array_merge($lis);
         $one_data = array(
             'img_href'   => $lis[0]['li_url'],
@@ -146,7 +151,6 @@ class IndexModel extends Model{
             $data[$i]['time']       = $lis[$i]['li_h6_span_time'];
             $data[$i]['idss']       = "message" . $i;
         }
-
         $arr = array(
             'one_data' => $one_data,
             'data'     => $data
@@ -165,10 +169,12 @@ class IndexModel extends Model{
         $news_time        = selector::select($news_detail,"//div[contains(@class,'headline')]//span");
         //$news_content     = selector::select($news_detail, "//div[contains(@id,'picWrap')]//p");
         $news_content     = selector::select($news_detail, "//div[contains(@class,'TRS_Editor')]//p");
+        //$news_content     = selector::select($news_detail, "//div[contains(@class,'TRS_Editor')]");
         //TRS_Editor  TRS_Editor
         $img_urls = array();
         $news_main = array();
         $news_tag = array();
+
         if(empty($news_content)){
             return $this -> bwzg_rd_detail2($news_content_url);
         }
@@ -181,8 +187,8 @@ class IndexModel extends Model{
                 }else{
                     $img_urls[] = $img_url_.ltrim($h,'.');
                 }
-            }elseif($this->mb_str_len(trim($new)) <=20){
-                $news_tag[] = $new;
+            }elseif($this->mb_str_len(trim(strip_tags($new))) <=20){
+                $news_tag[] = trim(strip_tags($new));
             }else{
                 $news_main[] = trim(strip_tags($new));
             }
