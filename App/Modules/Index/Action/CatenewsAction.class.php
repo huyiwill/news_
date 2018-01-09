@@ -21,6 +21,14 @@ class CatenewsAction extends CommonAction{
 
     );
 
+    //cate
+    public function cate_list(){
+        $c = include './App/Conf/news.cate.config.php';
+        $cate_m = new CatenewsModel();
+
+    }
+
+
     //news.html  页面  右侧新闻列表详情数据
     public function index2(){
         $news_content_url = $_GET['url'];
