@@ -22,7 +22,7 @@ class CatenewsAction extends CommonAction{
     );
 
     //news.html  页面  右侧新闻列表详情数据
-    public function index(){
+    public function index2(){
         $news_content_url = $_GET['url'];
         $index_m = new IndexModel();
         $twnc_m = new TwncModel();

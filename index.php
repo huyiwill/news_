@@ -10,11 +10,11 @@ define('HTML_PATH', './Html/');
 //3.开启调试模式
 define('APP_DEBUG', true);
 //debug function p()
-function p($a){
-    echo "<pre>";
-    print_r($a);
-    die;
-}
+//function p($a){
+//    echo "<pre>";
+//    print_r($a);
+//    die;
+//}
 //contains  phpspider  files
 require './vendor/phpspider/autoloader.php';
 

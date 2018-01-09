@@ -25,4 +25,11 @@ class IndexAction extends CommonAction {
         $this->assign('info',$info);
 		$this->display();
     }
+
+    //
+    public function index2(){
+        $script_path = __ROOT__.'/vendor/phpspider/demo/';
+        $res = exec("cd /vendor/phpspider/demo/;php catenanchang.php;");
+        var_dump($res);
+    }
 }

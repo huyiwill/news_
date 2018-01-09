@@ -13,6 +13,13 @@ class IndexAction extends CommonAction{
     public $desc;
     public $one_data_;
     public $data_;
+    //public $cate = array(
+    //    'jrnc', //今日南昌
+    //    'ncsp', // 南昌时评
+    //    'szxw', //时政新闻
+    //    'gnxw',//国内新闻http://www.ncnews.com.cn/xwzx/gnxw/
+    //
+    //);
 
     //news index
     public function index(){
@@ -27,6 +34,11 @@ class IndexAction extends CommonAction{
         $this->assign('data', $res['data']);
         $this->assign('datas', $res['data']);
         $this->display('index');
+    }
+
+    //cate
+    public function cate(){
+        $c = include './App/Conf/news.cate.config.php';
     }
 
     public function index_news_detail(){

@@ -811,3 +811,10 @@ function filter_exp(&$value){
         $value .= ' ';
     }
 }
+
+//debug function p(
+function pr($a){
+    echo "<pre>";
+    print_r($a);
+    die;
+}
