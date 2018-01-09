@@ -102,7 +102,7 @@ class IndexModel extends Model{
         foreach($news_li as $k => $li){
             $img = selector::select($li,"//img");
 
-            if(count($lis) >= 3){
+            if(count($lis) >= 5){
                 continue;
             }
             if(empty($img)){

@@ -27,7 +27,7 @@ class IndexAction extends CommonAction{
         $domain = "http://www.ncnews.com.cn";
         $index_m = new IndexModel();
         //$result = $index_m -> bwzg_rd($url);
-        $url = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index_1.html";
+        $url = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index.html";
         $res = $this -> check_url($url);
         $news_list = $this -> cate_list();
 
