@@ -112,12 +112,9 @@ $spider->on_scan_page = function ($page, $content, $phpspider){
 //    //$sql = "Select title_link From `news_twnc`";
 //    //$row = db::get_all($sql);
 //};
-
+//当一个field的内容被抽取到后进行的回调, 在此回调中可以对网页中抽取的内容作进一步处理
 $spider->on_extract_field = function ($fieldname, $data, $page){
     $arr = array();
-
-    //if($fieldname == 'title_content'){
-    //}
     if($fieldname == 'titles'){
         if(is_array($data)){
             foreach($data as $k => $v){
