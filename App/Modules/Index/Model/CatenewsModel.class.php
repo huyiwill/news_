@@ -7,8 +7,8 @@
  */
 class CatenewsModel extends Model{
     //list
-    public function cate_list(){
-        $news_cate = M('news_cate')->order('id asc')->select();
+    public function getCateInfoByName($where){
+        $news_cate = M('news_cate')->where($where)->order('id desc')->select();
         return $news_cate;
     }
     //
