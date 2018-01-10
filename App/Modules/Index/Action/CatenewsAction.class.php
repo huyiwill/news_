@@ -21,10 +21,14 @@ class CatenewsAction extends CommonAction{
 
     );
 
-    //cate
+    //cate info  wrap wrap_gray pt20
     public function cate_list(){
-        $c = include './App/Conf/news.cate.config.php';
-        $cate_m = new CatenewsModel();
+        $domain =  trim($_GET['domain']);
+        if(!in_array($domain,$this->cate)){
+            $this->redirect("Index/Index/index");
+        }
+        $this -> display('Index/cate');
+        pr($domain);
 
     }
 

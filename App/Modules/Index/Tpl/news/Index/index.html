@@ -106,7 +106,7 @@
             <foreach name="news_list" item="news_list">
             <li>
               <span class="wsmenu-click"></span>
-              <a href="category.html"><{$news_list}></a>
+              <a href="<{$news_list.url}>"><{$news_list.name}></a>
             </li>
             </foreach>
 
@@ -219,7 +219,7 @@
       <!-- END Tab panes -->
       <!-- Nav tabs -->
       <div class="col-sm-4 news-tabs">
-        <p class="news-tabs__title h2">Last news</p>
+        <p class="news-tabs__title h2">图片新闻</p>
         <ul class="news-tabs__nav nav nav-tabs shadow_text" role="tablist">
 
           <li role="presentation" class="active">

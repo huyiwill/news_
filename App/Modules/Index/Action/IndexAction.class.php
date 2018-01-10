@@ -28,9 +28,9 @@ class IndexAction extends CommonAction{
         //$result = $index_m -> bwzg_rd($url);
         $url = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index.html";
         $res = $this -> check_url($url);
-        $news_list = $this -> cate_list();
+        $c = $this -> cate_list();
 
-        $this->assign('news_list', $news_list);
+        $this->assign('news_list', $c['news_list']);
         $this->assign('one_data', $res['one_data']);
         $this->assign('data', $res['data']);
         $this->assign('datas', $res['data']);
@@ -40,7 +40,7 @@ class IndexAction extends CommonAction{
     //cate  nav cate_list
     public function cate_list(){
         $c = include './App/Conf/news.cate.config.php';
-        return $c['news_list'];
+        return $c;
     }
 
     public function index_news_detail(){

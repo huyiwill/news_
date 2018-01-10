@@ -105,7 +105,7 @@
 
             <?php if(is_array($news_list)): foreach($news_list as $key=>$news_list): ?><li>
               <span class="wsmenu-click"></span>
-              <a href="category.html"><?php echo ($news_list); ?></a>
+              <a href="<?php echo ($news_list["url"]); ?>"><?php echo ($news_list["name"]); ?></a>
             </li><?php endforeach; endif; ?>
 
             <li>
@@ -215,7 +215,7 @@
       <!-- END Tab panes -->
       <!-- Nav tabs -->
       <div class="col-sm-4 news-tabs">
-        <p class="news-tabs__title h2">Last news</p>
+        <p class="news-tabs__title h2">图片新闻</p>
         <ul class="news-tabs__nav nav nav-tabs shadow_text" role="tablist">
 
           <li role="presentation" class="active">
