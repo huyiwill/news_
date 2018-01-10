@@ -271,29 +271,30 @@
     <div class="container">
       <div class="row">
 
+        <foreach name="popular_news" item="item">
         <div class="col-sm-3">
           <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news2.jpg" height="153" width="270" alt="News">
+            <if condition="$item.news_img_url neq '' ">
+            <a href="<{$item.news_content_url}>" class="thumbnail__link">
+              <img src="<{$item.news_img_url}>" height="153" width="270" alt="News">
             </a>
+            </if>
             <div class="caption thumbnail__caption">
               <div class="news caption__news">
-                <p class="news__category yellow-line">Economy</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">Еhe world's economy is improving and good times</p>
+                <p class="news__category yellow-line"><{$item.news_cate}></p>
+                <a href="<{$item.news_content_url}>" class="news__link">
+                  <p class="news__text"><{$item.news_title}></p>
                 </a>
               </div>
               <div class="posted">
-                <span class="posted__date">today, 12:11</span>
+                <span class="posted__date"><{$item.news_time}></span>
                 <ul class="posted__icon">
                   <li>
                                                 <span>
-                                                <i class="icon-comment-empty"></i>11
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>1.1k
+                                                <i class="icon-eye"></i>
+                                                  <php>
+                                                        echo rand(1,10000);
+                                                  </php>
                                             </span>
                   </li>
                 </ul>
@@ -301,218 +302,14 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news3.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <p class="news__category yellow-line">Economy</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">The euro needs to everyone in a large amount</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 19:30</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>294
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>2.9k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news4.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <i class="icon-play"></i>
-                <p class="news__category yellow-line">People</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">NEWS: People began to love each other in large numbers online (Video)</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 2:39</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>9
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>1.3k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news5.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <p class="news__category yellow-line">Sport</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">Athletes are confident of victory in all competitions</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 14:34</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>58
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>8.8k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        </foreach>
 
       </div>
 
+
+
       <div class="row">
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news6.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <i class="icon-play"></i>
-                <p class="news__category yellow-line">People</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">All the people of the world love each other and say hello</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 12:37</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>20
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>1.2k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news7.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <p class="news__category yellow-line">Economy</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">Attention: The poor become rich, rich richer</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 11:30</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>21
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>1.9k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news8.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <i class="icon-play"></i>
-                <p class="news__category yellow-line">Sport</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">The winners of sports games already online (Video)</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 10:36</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>17
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>2.0k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news9.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <p class="news__category yellow-line">Business</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">The best exchange rates and motivation for you</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 12:30</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i><php>echo rand(1,10000);</php>
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
 
     </div>

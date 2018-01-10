@@ -13,23 +13,27 @@ class IndexAction extends CommonAction{
     public $desc;
     public $one_data_;
     public $data_;
-    //public $cate = array(
-    //    'jrnc', //今日南昌
-    //    'ncsp', // 南昌时评
-    //    'szxw', //时政新闻
-    //    'gnxw',//国内新闻http://www.ncnews.com.cn/xwzx/gnxw/
-    //
-    //);
+    public $cate = array(
+        'jrnc', //今日南昌
+        'ncsp', // 南昌时评
+        'szxw', //时政新闻
+        'gnxw',//国内新闻http://www.ncnews.com.cn/xwzx/gnxw/
+    );
 
     //news index
     public function index(){
         $url    = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/"; //本网原创
         $index_m = new IndexModel();
-        //$result = $index_m -> bwzg_rd($url);
+        $m_catenews = new CatenewsModel();
         $url = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index.html";
         $res = $this -> check_url($url);
         $c = $this -> cate_list();
+        //新闻  最新资讯
+        $popular_news = $m_catenews -> getCateNewsByRand(2);
+        //分类新闻 div
 
+
+        $this->assign('popular_news', $popular_news);
         $this->assign('news_list', $c['news_list']);
         $this->assign('one_data', $res['one_data']);
         $this->assign('data', $res['data']);

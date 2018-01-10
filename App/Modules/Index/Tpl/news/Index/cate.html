@@ -217,7 +217,7 @@
                     <foreach name="cate_data" item="item">
                         <div class="col-sm-3">
                             <div class="thumbnail thumbnail_small">
-                                <if condition="$item neq ''">
+                                <if condition="$item.news_img_url neq ''">
                                     <a href="<{$item.news_content_url}>" class="thumbnail__link">
                                         <img src="<{$item.news_img_url}>" height="153" width="270" alt="News">
                                     </a>
