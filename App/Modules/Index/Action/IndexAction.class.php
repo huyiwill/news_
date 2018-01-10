@@ -24,7 +24,6 @@ class IndexAction extends CommonAction{
     //news index
     public function index(){
         $url    = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/"; //本网原创
-        $domain = "http://www.ncnews.com.cn";
         $index_m = new IndexModel();
         //$result = $index_m -> bwzg_rd($url);
         $url = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index.html";
@@ -63,14 +62,18 @@ class IndexAction extends CommonAction{
     }
 
     //递归取出含有图片的新闻
-    public function check_url($url,$i=1){
+    public function check_url($url,$i=0){
         $arr = array();
         $bool = false;
         $index_m = new IndexModel();
         $result = $index_m -> bwzg_rd($url);
 
         if(empty($result['one_data']['title']) || empty($result['one_data']['img_href'])){
-            $url    = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index_".$i.".html";
+            if($i==0){
+                $url    = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index.html";
+            }else{
+                $url    = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index_".$i.".html";
+            }
             $this -> check_url($url,$i+1);
         }elseif(!empty($result['one_data']['img_href'])){
 
@@ -79,7 +82,11 @@ class IndexAction extends CommonAction{
             }
 
             if(empty($result['data'])){
-                $url    = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index_".$i.".html";
+                if($i==0){
+                    $url    = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index.html";
+                }else{
+                    $url    = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index_".$i.".html";
+                }
                 $this -> check_url($url,$i+1);
             }else{
                 foreach($result['data'] as $v){
@@ -104,6 +111,7 @@ class IndexAction extends CommonAction{
             );
             return $arr;
         }
+        return $arr;
     }
 
 }

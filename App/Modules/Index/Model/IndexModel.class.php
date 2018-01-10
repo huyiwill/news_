@@ -90,11 +90,9 @@ class IndexModel extends Model{
     public function bwzg_rd($url){
         $recommend_main = requests::get($url);
         $host = pathinfo($url);
-        if(isset($host['extension'])){
-            $img_url_ = $host['dirname'];
-        }else{
-            $img_url_ = $host['dirname'].'/'.$host['filename'];
-        }
+        //pr($host);
+        $img_url_ = $host['dirname'];
+
         $news_list = selector::select($recommend_main,"//ul[contains(@class,'listPicBox clearfix')]");
         $news_li = selector::select($news_list,"//li");
         $lis = array();
@@ -102,7 +100,7 @@ class IndexModel extends Model{
         foreach($news_li as $k => $li){
             $img = selector::select($li,"//img");
 
-            if(count($lis) >= 5){
+            if(count($lis) == 3){
                 continue;
             }
             if(empty($img)){
@@ -149,7 +147,7 @@ class IndexModel extends Model{
             $data[$i]['desc']       = $lis[$i]['li_h5'];
             $data[$i]['twnc']       = "本网原创";
             $data[$i]['time']       = $lis[$i]['li_h6_span_time'];
-            $data[$i]['idss']       = "message" . $i;
+            $data[$i]['idss']       = "message" . uniqid($i);
         }
         $arr = array(
             'one_data' => $one_data,

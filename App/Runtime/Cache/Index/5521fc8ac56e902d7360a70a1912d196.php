@@ -100,35 +100,17 @@
 
             <li class="active">
               <span class="wsmenu-click"></span>
-              <a href="index.html">Home</a>
+              <a href="./">首页</a>
             </li>
+
+            <?php if(is_array($news_list)): foreach($news_list as $key=>$news_list): ?><li>
+              <span class="wsmenu-click"></span>
+              <a href="category.html"><?php echo ($news_list); ?></a>
+            </li><?php endforeach; endif; ?>
+
             <li>
               <span class="wsmenu-click"></span>
-              <a href="category.html">Policy</a>
-            </li>
-            <li>
-              <span class="wsmenu-click"></span>
-              <a href="category.html">Sport</a>
-            </li>
-            <li>
-              <span class="wsmenu-click"></span>
-              <a href="category.html">Holidays</a>
-            </li>
-            <li>
-              <span class="wsmenu-click"></span>
-              <a href="category.html">Religion</a>
-            </li>
-            <li>
-              <span class="wsmenu-click"></span>
-              <a href="category.html">People</a>
-            </li>
-            <li>
-              <span class="wsmenu-click"></span>
-              <a href="category.html">Main</a>
-            </li>
-            <li>
-              <span class="wsmenu-click"></span>
-              <a href="">Other
+              <a href="">其他
                 <span class="arrow"></span>
               </a>
               <ul class="wsmenu-submenu">
