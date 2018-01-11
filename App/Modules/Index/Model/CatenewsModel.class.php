@@ -5,6 +5,7 @@
  * User: will5451
  * 分类
  */
+use \phpspider\core\selector;
 class CatenewsModel extends Model{
     //list
     public function getCateInfoByName($where){
@@ -50,5 +51,34 @@ class CatenewsModel extends Model{
         $news['szxw']['news_cate'] = '时政新闻';
         $news['gnxw']['news_cate'] = '国内新闻';
         return $news;
+    }
+
+    //根据url抓取新闻详细内容  只抓内容
+    public function getNewsDetailByUrl($id,$url){
+        $host = pathinfo($url);
+        $img_url_ = $host['dirname'];
+        $news_cate_info = M('news_cate') -> where(array('id',$id)) -> select();
+        $news_detail      = \phpspider\core\requests::get($url);
+        $content = selector::select($news_detail,"//div[contains(@class,'TRS_Editor')]//p");
+
+
+        pr($content);
+
+        $arr = array(
+
+        );
+        return $arr;
+
+    }
+
+    //计算中文长度
+    public function mb_str_len($str){
+        if(function_exists('mb_strlen')){
+            return mb_strlen($str,'utf-8');
+        }
+        else {
+            preg_match_all("/./u", $str, $ar);
+            return count($ar[0]);
+        }
     }
 }

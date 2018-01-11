@@ -32,6 +32,16 @@ class CatenewsAction extends CommonAction{
         $this->display('Index/cate');
     }
 
+    //获取新闻详情
+    public function get_news_detail(){
+        $url = trim($_GET['url']);
+        $id = trim($_GET['id']);
+        $m_catenews = new CatenewsModel();
+        $m_catenews -> getNewsDetailByUrl($id,$url);
+
+        $this -> display('Index/news_detail');
+    }
+
     //news.html  页面  右侧新闻列表详情数据
     public function index2(){
         $news_content_url = $_GET['url'];

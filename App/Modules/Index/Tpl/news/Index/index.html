@@ -86,14 +86,14 @@
         <div class="col-sm-3">
           <div class="thumbnail thumbnail_small">
             <if condition="$item.news_img_url neq '' ">
-            <a href="<{$item.news_content_url}>" class="thumbnail__link">
+            <a href="<{:U('Index/Catenews/get_news_detail/',array('id'=>$item['id'] , 'url'=>$item['news_content_url']))}>" class="thumbnail__link">
               <img src="<{$item.news_img_url}>" height="153" width="270" alt="News">
             </a>
             </if>
             <div class="caption thumbnail__caption">
               <div class="news caption__news">
                 <p class="news__category yellow-line"><{$item.news_cate}></p>
-                <a href="<{$item.news_content_url}>" class="news__link">
+                <a href="<{:U('Index/Catenews/get_news_detail/',array('id'=>$item['id'] , 'url'=>$item['news_content_url']))}>" class="news__link">
                   <p class="news__text"><{$item.news_title}></p>
                 </a>
               </div>
@@ -128,14 +128,14 @@
             <div class="col-sm-3">
               <div class="thumbnail thumbnail_small">
                 <if condition="$item.news_img_url neq '' ">
-                  <a href="<{$item.news_content_url}>" class="thumbnail__link">
+                  <a href="<{:U('Index/Catenews/get_news_detail/',array('id'=>$item['id'] ,'url'=>$item['news_content_url']))}>" class="thumbnail__link">
                     <img src="<{$item.news_img_url}>" height="153" width="270" alt="News">
                   </a>
                 </if>
                 <div class="caption thumbnail__caption">
                   <div class="news caption__news">
                     <p class="news__category yellow-line"><{$item.news_title}></p>
-                    <a href="<{$item.news_content_url}>" class="news__link">
+                    <a href="<{:U('Index/Catenews/get_news_detail/',array('id'=>$item['id'] , 'url'=>$item['news_content_url']))}>" class="news__link">
                       <p class="news__text"><{$item.news_title}></p>
                     </a>
                   </div>
