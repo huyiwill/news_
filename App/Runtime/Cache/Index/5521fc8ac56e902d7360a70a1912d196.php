@@ -1,190 +1,188 @@
-<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿﻿<!DOCTYPE html>
 <html lang="zxx">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="HandheldFriendly" content="true">
-  <meta content="telephone=no" name="format-detection">
-  <!-- favicon -->
-  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-  <!--[if (gt IE 9)|!(IE)]><!-->
-  <!-- custom CSS -->
-  <link href="__CSS__/main.css" rel="stylesheet" type="text/css"/>
-  <!-- END custom CSS -->
-  <!--<![endif]-->
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <!--<script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <!--<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
-  <![endif]-->
-  <title>NEWS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta content="telephone=no" name="format-detection">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <!-- custom CSS -->
+    <link href="__CSS__/main.css" rel="stylesheet" type="text/css" />
+    <!-- END custom CSS -->
+    <!--<![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>News</title>
 </head>
 <body>
-<!-- Header -->
 <header id="header" class="header">
-  <div class="header__top">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="wrap-logo">
-            <a href="index.html" class="logo"></a>
-          </div>
-        </div>
-        <div class="col-sm-offset-2 col-md-offset-5 col-sm-6 col-md-4 hidden-xs">
-          <div class="col-xs-4 col-sm-5">
-            <div class="weather">
-              <div class="weather__temperature">
-                <span class="icon-sun"></span>
-                <em class="active">+8 C</em>
-                <em>+2 C</em>
-                <em>+3 C</em>
-              </div>
-              <div class="weather__city">
-                <em>London</em>
-                <div class="weather__city__list">
-                  <ul>
-                    <li class="active">
-                      <a href="#">London</a>
-                    </li>
-                    <li>
-                      <a href="#">Moscow</a>
-                    </li>
-                    <li>
-                      <a href="#">Kiev</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-7">
-            <div class="exchange">
-              <p class="exchange__name">Central Bank Rate</p>
-              <p class="exchange__course">
-                $<span>32.32</span>&#8364;<span>28.23</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="wsmenucontent overlapblackbg"></div>
-  <div class="wsmenuexpandermain slideRight">
-    <a id="navToggle" class="animated-arrow slideLeft">
-      <span></span>
-    </a>
-  </div>
-  <div class="header_down">
-    <div class="container">
-      <div class="wrapper clearfix bigmegamenu">
-        <!--Main Menu HTML Code-->
-        <nav class="wsmenu slideLeft clearfix">
-          <ul class="mobile-sub wsmenu-list">
-            <li class="visible-xs">
-              <form class="navbar-form mob_search" role="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-search">
-                  <i class="icon-search"></i>
-                </button>
-              </form>
-            </li>
-
-            <li class="active">
-              <span class="wsmenu-click"></span>
-              <a href="./">首页</a>
-            </li>
-
-            <?php if(is_array($news_list)): foreach($news_list as $key=>$news_list): ?><li>
-              <span class="wsmenu-click"></span>
-              <a href="<?php echo ($news_list["url"]); ?>"><?php echo ($news_list["name"]); ?></a>
-            </li><?php endforeach; endif; ?>
-
-            <li>
-              <span class="wsmenu-click"></span>
-              <a href="">其他
-                <span class="arrow"></span>
-              </a>
-              <ul class="wsmenu-submenu">
-                <li>
-                  <a href="404.html">404 page</a>
-                </li>
-                <li>
-                  <a href="category.html">Category page</a>
-                </li>
-                <li>
-                  <a href="news.html">News page</a>
-                </li>
-                <li>
-                  <a href="search-result.html">Search result</a>
-                </li>
-                <li>
-                  <a href="full-width.html">Full width</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navbar-right hidden-xs">
-              <form class="navbar-form" role="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-search">
-                  <i class="icon-search"></i>
-                  <br/>Search
-                </button>
-              </form>
-            </li>
-            <li>
-              <div class="visible-xs col-sm-offset-5 col-sm-4">
-                <div class="col-sm-5">
-                  <div class="weather">
-                    <div class="weather__temperature">
-                      <span class="icon-sun"></span>
-                      <em>+8 C</em>
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="wrap-logo">
+                        <a href="index.html" class="logo"></a>
                     </div>
-                    <div class="weather__city">
-                      <em>London</em>
-                      <div class="weather__city__list">
-                        <ul>
-                          <li class="active">
-                            <a href="#">London</a>
-                          </li>
-                          <li>
-                            <a href="#">Moscow</a>
-                          </li>
-                          <li>
-                            <a href="#">Kiev</a>
-                          </li>
-                        </ul>
-                      </div>
+                </div>
+                <div class="col-sm-offset-2 col-md-offset-5 col-sm-6 col-md-4 hidden-xs">
+                    <div class="col-xs-4 col-sm-5">
+                        <div class="weather">
+                            <div class="weather__temperature">
+                                <span class="icon-sun"></span>
+                                <em class="active">+8 C</em>
+                                <em>+2 C</em>
+                                <em>+3 C</em>
+                            </div>
+                            <div class="weather__city">
+                                <em>London</em>
+                                <div class="weather__city__list">
+                                    <ul>
+                                        <li class="active">
+                                            <a href="#">London</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Moscow</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kiev</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="col-xs-6 col-sm-7">
+                        <div class="exchange">
+                            <p class="exchange__name">Central Bank Rate</p>
+                            <p class="exchange__course">
+                                $<span>32.32</span>&#8364;<span>28.23</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-7">
-                  <div class="exchange">
-                    <p class="exchange__name">Central Bank Rate</p>
-                    <p class="exchange__course">
-                      $<span>32.32</span>&#8364;<span>28.23</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <!--Menu HTML Code-->
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="wsmenucontent overlapblackbg"></div>
+    <div class="wsmenuexpandermain slideRight">
+        <a id="navToggle" class="animated-arrow slideLeft">
+            <span></span>
+        </a>
+    </div>
+    <div class="header_down">
+        <div class="container">
+            <div class="wrapper clearfix bigmegamenu">
+                <!--Main Menu HTML Code-->
+                <nav class="wsmenu slideLeft clearfix">
+                    <ul class="mobile-sub wsmenu-list">
+                        <li class="visible-xs">
+                            <form class="navbar-form mob_search" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-search">
+                                    <i class="icon-search"></i>
+                                </button>
+                            </form>
+                        </li>
+
+                        <li class="active">
+                            <span class="wsmenu-click"></span>
+                            <a href="./">首页</a>
+                        </li>
+
+                        <?php if(is_array($news_list)): foreach($news_list as $key=>$news_list): ?><li>
+                                <span class="wsmenu-click"></span>
+                                <a href="<?php echo ($news_list["url"]); ?>"><?php echo ($news_list["name"]); ?></a>
+                            </li><?php endforeach; endif; ?>
+
+                        <li>
+                            <span class="wsmenu-click"></span>
+                            <a href="">其他
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="wsmenu-submenu">
+                                <li>
+                                    <a href="404.html">404 page</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Category page</a>
+                                </li>
+                                <li>
+                                    <a href="news.html">News page</a>
+                                </li>
+                                <li>
+                                    <a href="search-result.html">Search result</a>
+                                </li>
+                                <li>
+                                    <a href="full-width.html">Full width</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar-right hidden-xs">
+                            <form class="navbar-form" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-search">
+                                    <i class="icon-search"></i>
+                                    <br/>Search
+                                </button>
+                            </form>
+                        </li>
+                        <li>
+                            <div class="visible-xs col-sm-offset-5 col-sm-4">
+                                <div class="col-sm-5">
+                                    <div class="weather">
+                                        <div class="weather__temperature">
+                                            <span class="icon-sun"></span>
+                                            <em>+8 C</em>
+                                        </div>
+                                        <div class="weather__city">
+                                            <em>London</em>
+                                            <div class="weather__city__list">
+                                                <ul>
+                                                    <li class="active">
+                                                        <a href="#">London</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Moscow</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Kiev</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="exchange">
+                                        <p class="exchange__name">Central Bank Rate</p>
+                                        <p class="exchange__course">
+                                            $<span>32.32</span>&#8364;<span>28.23</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Menu HTML Code-->
+            </div>
+        </div>
+    </div>
 </header>
+
 <!-- END header -->
 <!-- header slider -->
 <div class="slate_gray">
@@ -257,255 +255,77 @@
   <!-- title -->
   <div class="wrap wrap_white">
     <div class="container title">
-      <h1 class="title__h1 underscore">Popular content</h1>
+      <h1 class="title__h1 underscore">最新资讯</h1>
     </div>
   </div>
   <!-- END title -->
   <div class="wrap wrap_gray pt20">
     <div class="container">
       <div class="row">
+        <?php if(is_array($popular_news)): foreach($popular_news as $key=>$item): ?><div class="col-sm-3">
+          <div class="thumbnail thumbnail_small">
+            <?php if($item["news_img_url"] != '' ): ?><a href="<?php echo ($item["news_content_url"]); ?>" class="thumbnail__link">
+              <img src="<?php echo ($item["news_img_url"]); ?>" height="153" width="270" alt="News">
+            </a><?php endif; ?>
+            <div class="caption thumbnail__caption">
+              <div class="news caption__news">
+                <p class="news__category yellow-line"><?php echo ($item["news_cate"]); ?></p>
+                <a href="<?php echo ($item["news_content_url"]); ?>" class="news__link">
+                  <p class="news__text"><?php echo ($item["news_title"]); ?></p>
+                </a>
+              </div>
+              <div class="posted">
+                <span class="posted__date"><?php echo ($item["news_time"]); ?></span>
+                <ul class="posted__icon">
+                  <li>
+                                                <span>
+                                                <i class="icon-eye"></i>
+                                                  <?php echo rand(1,10000); ?>
+                                            </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><?php endforeach; endif; ?>
+      </div>
 
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news2.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <p class="news__category yellow-line">Economy</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">Еhe world's economy is improving and good times</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 12:11</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>11
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>1.1k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+
+      <?php if(is_array($every_news_section)): foreach($every_news_section as $key=>$items): ?><div class="wrap wrap_white">
+          <div class="container title">
+            <h1 class="title__h1 underscore"><?php echo ($items["news_cate"]); ?></h1>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news3.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <p class="news__category yellow-line">Economy</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">The euro needs to everyone in a large amount</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 19:30</span>
-                <ul class="posted__icon">
-                  <li>
+        <div class="row">
+          <?php if(is_array($items["news_cate_data"])): foreach($items["news_cate_data"] as $key=>$item): ?><div class="col-sm-3">
+              <div class="thumbnail thumbnail_small">
+                <?php if($item["news_img_url"] != '' ): ?><a href="<?php echo ($item["news_content_url"]); ?>" class="thumbnail__link">
+                    <img src="<?php echo ($item["news_img_url"]); ?>" height="153" width="270" alt="News">
+                  </a><?php endif; ?>
+                <div class="caption thumbnail__caption">
+                  <div class="news caption__news">
+                    <p class="news__category yellow-line"><?php echo ($item["news_title"]); ?></p>
+                    <a href="<?php echo ($item["news_content_url"]); ?>" class="news__link">
+                      <p class="news__text"><?php echo ($item["news_title"]); ?></p>
+                    </a>
+                  </div>
+                  <div class="posted">
+                    <span class="posted__date"><?php echo ($item["news_time"]); ?></span>
+                    <ul class="posted__icon">
+                      <li>
                                                 <span>
-                                                <i class="icon-comment-empty"></i>294
+                                                <i class="icon-eye"></i>
+                                                  <?php echo rand(1,10000); ?>
                                             </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>2.9k
-                                            </span>
-                  </li>
-                </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news4.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <i class="icon-play"></i>
-                <p class="news__category yellow-line">People</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">NEWS: People began to love each other in large numbers online (Video)</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 2:39</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>9
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>1.3k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news5.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <p class="news__category yellow-line">Sport</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">Athletes are confident of victory in all competitions</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 14:34</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>58
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>8.8k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news6.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <i class="icon-play"></i>
-                <p class="news__category yellow-line">People</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">All the people of the world love each other and say hello</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 12:37</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>20
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>1.2k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news7.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <p class="news__category yellow-line">Economy</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">Attention: The poor become rich, rich richer</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 11:30</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>21
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>1.9k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news8.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <i class="icon-play"></i>
-                <p class="news__category yellow-line">Sport</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">The winners of sports games already online (Video)</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 10:36</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-comment-empty"></i>17
-                                            </span>
-                  </li>
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i>2.0k
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="thumbnail thumbnail_small">
-            <a href="news.html" class="thumbnail__link">
-              <img src="__IMAGES__/content/news9.jpg" height="153" width="270" alt="News">
-            </a>
-            <div class="caption thumbnail__caption">
-              <div class="news caption__news">
-                <p class="news__category yellow-line">Business</p>
-                <a href="news.html" class="news__link">
-                  <p class="news__text">The best exchange rates and motivation for you</p>
-                </a>
-              </div>
-              <div class="posted">
-                <span class="posted__date">today, 12:30</span>
-                <ul class="posted__icon">
-                  <li>
-                                                <span>
-                                                <i class="icon-eye"></i><?php echo rand(1,10000); ?>
-                                            </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </div><?php endforeach; endif; ?>
+        </div><?php endforeach; endif; ?>
+
+
     </div>
     <!-- btn load-->
     <div class="ajax_load">
@@ -520,39 +340,39 @@
 </section>
 <!-- /top news -->
 
-<!-- Footer -->
+﻿<!-- Footer -->
 <footer class="footer slate_gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <p class="copyright">Copyright &copy; 2017.Company name All rights reserved.<a target="_blank"
-                                                                                       href="http://sc.chinaz.com/moban/">
-          &#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-      </div>
-      <div class="col-sm-6">
-        <div class="social navbar-right">
-          <p class="social__text">We are in social networks</p>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="facebook" href="#">
-                <i class="icon-facebook"></i>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="twitter" href="#">
-                <i class="icon-twitter"></i>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="gplus" href="#">
-                <i class="icon-gplus"></i>
-              </a>
-            </li>
-          </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="copyright">Copyright &copy; 2017.Company name All rights reserved.<a target="_blank"
+                                                                                               href="http://sc.chinaz.com/moban/">
+                    &#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+            </div>
+            <div class="col-sm-6">
+                <div class="social navbar-right">
+                    <p class="social__text">We are in social networks</p>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="facebook" href="#">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="twitter" href="#">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="gplus" href="#">
+                                <i class="icon-gplus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </footer>
 <!-- END Footer -->
 <!-- All JavaScript libraries -->

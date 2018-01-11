@@ -28,13 +28,15 @@ class IndexAction extends CommonAction{
         $url = "http://www.ncnews.com.cn/xwzx/ncxw/bwzg_rd/index.html";
         $res = $this -> check_url($url);
         $c = $this -> cate_list();
-        //新闻  最新资讯
+        // 新闻  最新资讯
         $popular_news = $m_catenews -> getCateNewsByRand(2);
-        //分类新闻 div
+        // every_news_section div
+        $every_news_section = $m_catenews -> getEveryNewsSection(4);
 
 
+        $this->assign('every_news_section', $every_news_section);
         $this->assign('popular_news', $popular_news);
-        $this->assign('news_list', $c['news_list']);
+        //$this->assign('news_list', $c['news_list']);
         $this->assign('one_data', $res['one_data']);
         $this->assign('data', $res['data']);
         $this->assign('datas', $res['data']);
