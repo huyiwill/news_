@@ -101,7 +101,7 @@
                         </li>
 
                         <?php if(is_array($news_list)): foreach($news_list as $key=>$news_list): ?><li>
-                                <span class="wsmenu-click"></span>
+                                <span class="wsmenu-click" onclick="window.location.href = '<?php echo ($news_list["url"]); ?>'"></span>
                                 <a href="<?php echo ($news_list["url"]); ?>"><?php echo ($news_list["name"]); ?></a>
                             </li><?php endforeach; endif; ?>
 
@@ -264,13 +264,13 @@
       <div class="row">
         <?php if(is_array($popular_news)): foreach($popular_news as $key=>$item): ?><div class="col-sm-3">
           <div class="thumbnail thumbnail_small">
-            <?php if($item["news_img_url"] != '' ): ?><a href="<?php echo ($item["news_content_url"]); ?>" class="thumbnail__link">
+            <?php if($item["news_img_url"] != '' ): ?><a href="<?php echo U('Index/Catenews/get_news_detail/',array('id'=>$item['id'] , 'url'=>$item['news_content_url']));?>" class="thumbnail__link">
               <img src="<?php echo ($item["news_img_url"]); ?>" height="153" width="270" alt="News">
             </a><?php endif; ?>
             <div class="caption thumbnail__caption">
               <div class="news caption__news">
                 <p class="news__category yellow-line"><?php echo ($item["news_cate"]); ?></p>
-                <a href="<?php echo ($item["news_content_url"]); ?>" class="news__link">
+                <a href="<?php echo U('Index/Catenews/get_news_detail/',array('id'=>$item['id'] , 'url'=>$item['news_content_url']));?>" class="news__link">
                   <p class="news__text"><?php echo ($item["news_title"]); ?></p>
                 </a>
               </div>
@@ -299,13 +299,13 @@
         <div class="row">
           <?php if(is_array($items["news_cate_data"])): foreach($items["news_cate_data"] as $key=>$item): ?><div class="col-sm-3">
               <div class="thumbnail thumbnail_small">
-                <?php if($item["news_img_url"] != '' ): ?><a href="<?php echo ($item["news_content_url"]); ?>" class="thumbnail__link">
+                <?php if($item["news_img_url"] != '' ): ?><a href="<?php echo U('Index/Catenews/get_news_detail/',array('id'=>$item['id'] ,'url'=>$item['news_content_url']));?>" class="thumbnail__link">
                     <img src="<?php echo ($item["news_img_url"]); ?>" height="153" width="270" alt="News">
                   </a><?php endif; ?>
                 <div class="caption thumbnail__caption">
                   <div class="news caption__news">
                     <p class="news__category yellow-line"><?php echo ($item["news_title"]); ?></p>
-                    <a href="<?php echo ($item["news_content_url"]); ?>" class="news__link">
+                    <a href="<?php echo U('Index/Catenews/get_news_detail/',array('id'=>$item['id'] , 'url'=>$item['news_content_url']));?>" class="news__link">
                       <p class="news__text"><?php echo ($item["news_title"]); ?></p>
                     </a>
                   </div>

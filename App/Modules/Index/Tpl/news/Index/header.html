@@ -102,7 +102,7 @@
 
                         <foreach name="news_list" item="news_list">
                             <li>
-                                <span class="wsmenu-click"></span>
+                                <span class="wsmenu-click" onclick="window.location.href = '<{$news_list.url}>'"></span>
                                 <a href="<{$news_list.url}>"><{$news_list.name}></a>
                             </li>
                         </foreach>

@@ -6,7 +6,7 @@
 class CommonAction extends Action
 {
 	Public function _initialize(){
-		if (ismobile()) {
+        if (ismobile()) {
             //C('DEFAULT_THEME','mobile');
             C('DEFAULT_THEME','news');
         }
